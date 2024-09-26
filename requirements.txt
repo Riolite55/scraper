@@ -1,0 +1,7 @@
+selenium==4.19.0
+pandas==2.2.2
+setuptools
+secure-smtplib
+python-dotenv
+functions-framework
+openpyxl
