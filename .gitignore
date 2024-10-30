@@ -1,3 +1,4 @@
 historical_files/
 scraper/
 *.csv
+.env
