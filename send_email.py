@@ -6,7 +6,6 @@ from email import encoders
 import os
 from dotenv import load_dotenv
 from utils_consts import to_addresses,subject,body,today_date
-from remove_csv_and_xlsx_files import *
 load_dotenv()
 
 
@@ -14,8 +13,7 @@ def send_email(to_addresses, subject, body):
     # Set up the email server and login credentials
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    #email_address = 'tariq.khasawneh@devoteam.com'
-    email_address = "omarkamalabuassaf1@gmail.com"
+    email_address = 'tariq.khasawneh@devoteam.com'
     email_password = os.getenv('EMAIL_PASSWORD')
 
 
@@ -50,7 +48,6 @@ def send_email(to_addresses, subject, body):
     server.quit()
 
     print('Email sent successfully!')
-    remove_csv_and_xlsx_files()
-    
+
 if __name__ == '__main__':
     send_email(to_addresses, subject, body)
