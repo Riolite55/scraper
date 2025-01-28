@@ -5,3 +5,4 @@ secure-smtplib
 python-dotenv
 functions-framework
 openpyxl
+streamlit
